@@ -38,6 +38,7 @@ $(".vendor-cover").each(function(index) {
 // Locked
 $("[status=locked]").each(function(){
     $(this).append('<i class="fas fa-lock fa-4x"></i>');
+    console.log("Lock added.");
 
     // On click
     $(this).click(function(){
@@ -48,7 +49,6 @@ $("[status=locked]").each(function(){
 // Unlocked
 $("[status=unlocked]").each(function(){
     $(this).append('<i class="fas fa-lock-open fa-4x"></i>');
-
     // On click
     $(this).click(function(){
         $(this).fadeOut(500);
