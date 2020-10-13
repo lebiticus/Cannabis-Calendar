@@ -26,17 +26,17 @@ $(".vendor-cover").each(function(index) {
     var vendorDate = Date.UTC(2020, 11, ($(this).attr("date")));
         // console.log(index + ": " + vendorDate);
     if(vendorDate < sampleTime) {
-        $(this).attr("status", "unlocked");
+        $(this).attr("status", "dunlocked");
         console.log($(this).attr("status"));
     } else {
-        $(this).attr("status", "locked");
+        $(this).attr("status", "dlocked");
     }
 });
 
 // Set status behaviors
 
 // Locked
-$("[status=locked]").each(function(){
+$("[status=dlocked]").each(function(){
     $(this).append('<i class="fas fa-lock fa-4x"></i>');
     console.log("Lock added.")
     // On click
@@ -46,7 +46,7 @@ $("[status=locked]").each(function(){
 });
 
 // Unlocked
-$("[status=unlocked]").each(function(){
+$("[status=dunlocked]").each(function(){
     $(this).append('<span>' + $(this).attr("date") + '</span>');
 
     // On click
@@ -54,32 +54,6 @@ $("[status=unlocked]").each(function(){
         $(this).fadeOut(500);
     });
 });
-
-
-
-// if($(this).attr("status") == "unlocked") {
-//     $(this).fadeOut(500)
-// } else {
-//     // alert("This can't be opened yet. Come back on the " + $(this).attr("date") +"th!");
-// };
-
-
-
-
-// Click to fade out
-// $(".vendor-cover").click(function(){
-// 	var vendorDate = Date.UTC(2020, 9, ($(this).attr("date")));
-// 	if(vendorDate < currentTime) {
-// 		$(this).fadeOut(500);
-// 	} else {
-// 		alert("This vendorDate is not less than the currentTime")
-// 	};
-// });
-
-// Cover timer
-function timeTracker() {
-
-};
 
 
 
