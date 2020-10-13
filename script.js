@@ -38,8 +38,7 @@ $(".vendor-cover").each(function(index) {
 // Locked
 $("[status=locked]").each(function(){
     $(this).append('<i class="fas fa-lock fa-4x"></i>');
-    console.log("Lock added.");
-
+    console.log("Lock added.")
     // On click
     $(this).click(function(){
         alert("This can't be opened yet. Come back on the " + $(this).attr("date") +"th!");
@@ -48,7 +47,8 @@ $("[status=locked]").each(function(){
 
 // Unlocked
 $("[status=unlocked]").each(function(){
-    $(this).append('<i class="fas fa-lock-open fa-4x"></i>');
+    $(this).append('<span>' + $(this).attr("date") + '</span>');
+
     // On click
     $(this).click(function(){
         $(this).fadeOut(500);
