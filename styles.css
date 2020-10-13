@@ -1,3 +1,15 @@
+body {
+	padding: 0px;
+	margin: 0px;
+}
+
+#info-bar {
+	text-align: center;
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
 #age-wall {
     z-index: 100;
     display: flex;
