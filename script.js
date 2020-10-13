@@ -25,6 +25,7 @@ $(".vendor-cover").each(function(index) {
     $(this).attr("date", (index + 1));
     var vendorDate = Date.UTC(2020, 11, ($(this).attr("date")));
         // console.log(index + ": " + vendorDate);
+    $(this).append('<span>' + $(this).attr("date") + '</span>');
     if(vendorDate < sampleTime) {
         $(this).attr("status", "dunlocked");
         console.log($(this).attr("status"));
@@ -37,7 +38,7 @@ $(".vendor-cover").each(function(index) {
 
 // Locked
 $("[status=dlocked]").each(function(){
-    $(this).append('<i class="fas fa-lock fa-4x"></i>');
+    // $(this).append('<i class="fas fa-lock fa-4x"></i>');
     console.log("Lock added.")
     // On click
     $(this).click(function(){
@@ -47,7 +48,6 @@ $("[status=dlocked]").each(function(){
 
 // Unlocked
 $("[status=dunlocked]").each(function(){
-    $(this).append('<span>' + $(this).attr("date") + '</span>');
 
     // On click
     $(this).click(function(){
