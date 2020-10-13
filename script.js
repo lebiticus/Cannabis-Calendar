@@ -8,7 +8,7 @@ $("#age-yes").click(function(){
 // VENDOR COVERS =========================================
 var currentTime = (Date.now() - 28800000);
 var sampleTime = Date.UTC(2020, 11, 4);
-$("#info-bar").append('<span>' + "Sample Time: " + new Date(sampleTime) + '</span>')
+$("#info-bar").append('<span>' + "Simulated Current Time: " + new Date(sampleTime) + '</span>')
 
 console.log("Current Time: " + new Date(currentTime));
 console.log("Sample Time: " + new Date(sampleTime));
