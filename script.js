@@ -34,15 +34,6 @@ $(".vendor-cover").each(function(index) {
 });
 
 // Set status behaviors
-// Unlocked
-$("[status=unlocked]").each(function(){
-    $(this).append('<i class="fas fa-lock-open fa-4x"></i>');
-
-    // On click
-    $(this).click(function(){
-        $(this).fadeOut(500);
-    });
-});
 
 // Locked
 $("[status=locked]").each(function(){
@@ -53,6 +44,18 @@ $("[status=locked]").each(function(){
         alert("This can't be opened yet. Come back on the " + $(this).attr("date") +"th!");
     });
 });
+
+// Unlocked
+$("[status=unlocked]").each(function(){
+    $(this).append('<i class="fas fa-lock-open fa-4x"></i>');
+
+    // On click
+    $(this).click(function(){
+        $(this).fadeOut(500);
+    });
+});
+
+
 
 // if($(this).attr("status") == "unlocked") {
 //     $(this).fadeOut(500)
@@ -87,6 +90,3 @@ function timeTracker() {
 
 // End =========================
 });
-
-
-    
