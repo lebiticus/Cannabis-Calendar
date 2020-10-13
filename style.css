@@ -1,0 +1,68 @@
+#age-wall {
+    z-index: 100;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #DFDFDF;
+    margin: 0px;
+}
+
+#calendar-container {
+
+}
+
+#calendar-header {
+    display: block;
+    width: 100%;
+    height: 0px;
+    padding-top: 33%;
+    background-color: #e0e0e0;
+    margin: 0px auto 20px;
+}
+
+#vendors {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0px auto;
+}
+
+.vendor {
+    display: block;
+    position: relative;
+    width: 300px;
+    height: 250px;
+    background-color: #F5F5F5;
+    margin: 0px 10px 20px;
+}
+
+.vendor-cover {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+    background-color: #e4e4e4;
+    margin: 0px;
+}
+
+.fas {
+    opacity: .5;
+    color: white;
+    padding: 0px 0px 10px;
+}
