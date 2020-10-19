@@ -1,10 +1,10 @@
 $(document).ready(function(){
 
+// AD SET UP ====================================
 $('head').append('<script>console.log("hai")</script>');
-// SET UP ====================================
-// $("head").append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
-//
-// function tagHead() {
+$("head").append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
+
+// var cHead = `<script>
 //   window.googletag = window.googletag || {cmd: []};
 //   googletag.cmd.push(function() {
 //     googletag.defineSlot('/30582678/ADN/adn/alaska-marijuana', [[1, 1], [300, 250], [728, 90], [300, 1], [300, 600], [320, 50]], 'div-gpt-ad-1603130255810-0').setTargeting('adn-pos', ['12-DOC']).addService(googletag.pubads());
@@ -12,9 +12,11 @@ $('head').append('<script>console.log("hai")</script>');
 //     googletag.pubads().setTargeting('adn-pos', ['12-DOC']);
 //     googletag.enableServices();
 //   });
-// }
+// </script>`
 //
-// $("head").append(tagHead());
+// $('head').append(cHead);
+// console.log(cHead);
+
 
 // AGE WALL =====================================
 $("#age-yes").click(function(){
