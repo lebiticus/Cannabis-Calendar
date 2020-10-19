@@ -1,9 +1,6 @@
 $(document).ready(function(){
 
 // AD SET UP ====================================
-$('head').append('<script>console.log("hai")</script>');
-$("head").append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
-
 // var cHead = `<script>
 //   window.googletag = window.googletag || {cmd: []};
 //   googletag.cmd.push(function() {
@@ -12,10 +9,13 @@ $("head").append('<script async src="https://securepubads.g.doubleclick.net/tag/
 //     googletag.pubads().setTargeting('adn-pos', ['12-DOC']);
 //     googletag.enableServices();
 //   });
-// </script>`
+// </script>`;
 //
 // $('head').append(cHead);
 // console.log(cHead);
+
+$('head').append('<script>console.log("hai")</script>');
+$('head').append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
 
 
 // AGE WALL =====================================
