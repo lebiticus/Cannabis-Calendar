@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+$('head').append('<script>console.log("hai")</script>');
 // SET UP ====================================
 // $("head").append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
 //
