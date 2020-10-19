@@ -1,18 +1,20 @@
+var cHead = `<script>
+  window.googletag = window.googletag || {cmd: []};
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/30582678/ADN/adn/alaska-marijuana', [[1, 1], [300, 250], [728, 90], [300, 1], [300, 600], [320, 50]], 'div-gpt-ad-1603130255810-0').setTargeting('adn-pos', ['12-DOC']).addService(googletag.pubads());
+    googletag.pubads().collapseEmptyDivs();
+    googletag.pubads().setTargeting('adn-pos', ['12-DOC']);
+    googletag.enableServices();
+  });
+</script>`;
+
+$('head').append(cHead);
+console.log(cHead);
+
 $(document).ready(function(){
 
 // AD SET UP ====================================
-// var cHead = `<script>
-//   window.googletag = window.googletag || {cmd: []};
-//   googletag.cmd.push(function() {
-//     googletag.defineSlot('/30582678/ADN/adn/alaska-marijuana', [[1, 1], [300, 250], [728, 90], [300, 1], [300, 600], [320, 50]], 'div-gpt-ad-1603130255810-0').setTargeting('adn-pos', ['12-DOC']).addService(googletag.pubads());
-//     googletag.pubads().collapseEmptyDivs();
-//     googletag.pubads().setTargeting('adn-pos', ['12-DOC']);
-//     googletag.enableServices();
-//   });
-// </script>`;
-//
-// $('head').append(cHead);
-// console.log(cHead);
+
 
 $('head').append('<script>console.log("hai")</script>');
 $('head').append('<script async src="https://securepubads.g.doubleclick.net/tag/js/gpt.js"></script>');
@@ -73,7 +75,15 @@ $("[status=dunlocked]").each(function(){
     });
 });
 
+// Load in ads
+var adTest = `  <!-- /30582678/ADN/adn/alaska-marijuana -->
+  <div id='div-gpt-ad-1603130255810-0'>
+   <script>
+     googletag.cmd.push(function() { googletag.display('div-gpt-ad-1603130255810-0'); });
+   </script>
+  </div>`;
 
+$('#age-wall').prepend(adTest);
 
 
 
